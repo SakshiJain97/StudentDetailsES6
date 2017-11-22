@@ -1,0 +1,23 @@
+.form-group{
+  margin: 10px;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color:#000;
+    background-color: #11536f;
+}
+td{
+
+  width: 100px;
+}
+
+table {
+    background-color: #318ddc;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin: 0px 20px;
+    line-height: normal;
+}
