@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+<title> Student Details </title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+
+<script type="text/javascript" src="ES6/js/main.js">
+
+</script>
+
+</head>
+
+
+<body>
+  <h1 align="center">Student Portal</h1>
+  <div class="container-fluid" ">
+
+    <form class="form-inline">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" id="name">
+  </div>
+  <div class="form-group">
+    <label for="rno">Roll no:</label>
+    <input type="text" class="form-control" id="rno">
+  </div>
+  <div class="form-group">
+    <label for="year">Passout Year:</label>
+    <input type="text" class="form-control" id="year">
+  </div>
+  <div class="form-group">
+    <label for="stream">Stream:</label>
+    <input type="text" class="form-control" id="stream">
+  </div>
+
+</form>
+
+<div class="row">
+  <div align="center" class="col-md-12">
+    <button type="button"  class="btn btn-primary add" style="padding:5px 25px; margin:10px;" >Add</button>
+  </div>
+
+</div>
+<h4 align="center" class="text-warning">Click on an entry to edit it</h6>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Rollno.</th>
+        <th>Year</th>
+        <th>Stream</th>
+        <th onclick="removeall()"><button class="btn btn-delete">Delete Selected</button></th>
+      </tr>
+    </thead>
+    <tbody id="tab">
+      <tr>
+        <td contenteditable="true">Sakshi Jain</td>
+        <td contenteditable="true">1510991572</td>
+        <td contenteditable="true">2019</td>
+        <td contenteditable="true">Cse</td>
+        <td style='width:25px;'>
+        <input type="checkbox" margin=20px>
+            <button type="button" class="btn btn-default btn-sm del">
+              <span class="glyphicon glyphicon-remove"></span>
+              </button>
+        </td>
+
+      </tr>
+      <tr>
+        <td contenteditable="true">Saloni Gupta</td>
+        <td contenteditable="true">1510991575</td>
+        <td contenteditable="true">2019</td>
+        <td contenteditable="true">Cse</td>
+        <td style='width:25px;'>
+        <input type="checkbox" margin=20px>
+            <button type="button" class="btn btn-default btn-sm del">
+              <span class="glyphicon glyphicon-remove"></span>
+              </button>
+        </td>
+
+      </tr>
+      <tr>
+        <td contenteditable="true">Riya Singla</td>
+        <td contenteditable="true">1510991571</td>
+        <td contenteditable="true">2019</td>
+        <td contenteditable="true">B.com</td>
+        <td style='width:25px;'>
+        <input type="checkbox" margin=20px>
+            <button type="button" class="btn btn-default btn-sm del">
+              <span class="glyphicon glyphicon-remove"></span>
+              </button>
+        </td>
+
+      </tr>
+      </tbody>
+  </table>
+</div>
+</body>
+
+</html>
